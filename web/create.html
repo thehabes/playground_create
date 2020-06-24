@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>A Playground Tool For Create</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+        <!--<script src="./js/app.js"></script>-->
+        <script src="https://centerfordigitalhumanities.github.io/rerum-playground/playground.js"></script>
+        
+    </head>
+    <body>
+        <div id="playground_tool_html" class="container">
+            <div id="intro">
+                A tool for creating JSON or JSON-LD objects using the RERUM API.  These items will be attributed to the PLAYGROUND.
+            </div>
+            <div id="tool">
+                <!-- CRUD in tools MUST use the PLAYGROUND.UTILS.CRUD function set.  -->
+                <form id="create" action="javascript:void(0);" onsubmit="PLAYGROUND.UTILS.CRUD.CREATE(this)">
+                    <h2>Create Resource</h2>
+                    <p>Provide valid JSON to create an object through the playground.</p>
+                    <label for="createJSON">
+                        JSON to Create
+                    </label>
+                    <textarea id="createJSON"></textarea>
+                    <button type="submit" role="button"> Create </button>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        /**
+         * Custom UI and scripting for this tool should be here, or maybe included from a js folder..  
+         */
+    </script>
+</html>
